@@ -25,11 +25,30 @@ nav li {
     font-size: 0.8em; /* Smaller font size */
     transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
 }
+.nav-button-2 {
+    display: block;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 5px 8px; /* Smaller padding for smaller buttons */
+    text-decoration: none;
+    border-radius: 15px; /* Rounded corners */
+    background-color: hotpink; /* White background */
+    /* border: 1px solid white; /* Hotpink border */
+    margin: 5px; /* Margin around buttons */
+    font-size: 0.8em; /* Smaller font size */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+}
 
 /* Hover effect */
 .nav-button:hover {
     background-color: hotpink; /* Hotpink background on hover */
     color: white; /* White text on hover */
+}
+
+.nav-button-2:hover {
+    background-color: white; /* Hotpink background on hover */
+    color: black; /* White text on hover */
+    border: 1px solid white;
 }
 body {
     font-family: 'Arial', sans-serif;

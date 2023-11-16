@@ -1,3 +1,5 @@
+
+// Existing drag-and-drop functionality
 function allowDrop(event) {
     event.preventDefault();
 }
@@ -13,18 +15,18 @@ function drop(event) {
     // Only append to poem container if the dragged element is a fragment
     if (draggedElement.classList.contains('fragment')) {
         event.target.appendChild(draggedElement);
-        event.target.querySelector('p').style.display = 'none';
+        event.target.appendChild(document.createElement("br")); // Ensure each fragment is on a new line
     }
 }
+var audio = document.getElementById('yourAudioElementId'); // Replace with your audio element ID
+var musicToggleImg = document.getElementById('musicToggle');
 
-
-document.querySelectorAll('.editable-blank').forEach(element => {
-    element.addEventListener('click', (event) => {
-        // Focus on the editable element when clicked
-        event.target.focus();
-    });
-
-    element.addEventListener('input', (event) => {
-        // Handle the input. For example, you can check the length of input here.
-    });
+musicToggleImg.addEventListener('click', function() {
+    if (audio.paused) {
+        audio.play();
+        musicToggleImg.src = 'pause-lyre.png'; // Change the image to 'pause' icon
+    } else {
+        audio.pause();
+        musicToggleImg.src = 'final-play-button.png'; // Change the image to 'play' icon
+    }
 });

@@ -5,6 +5,7 @@ nav ul {
     padding: 0;
     overflow: hidden;
     text-align: center; /* Center the navigation menu */
+    display: inline-block;
 }
 
 nav li {
@@ -144,3 +145,15 @@ h1 {
 .new-text {
     color: blue; /* Or any color you prefer */
 }
+
+
+/* Styling for the header to display the image and heading side by side */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#musicToggle {
+    width: 150px;
+}
+

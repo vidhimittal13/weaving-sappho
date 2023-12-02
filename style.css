@@ -65,6 +65,8 @@ header {
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
+    position: relative;
+    
 }
 
 h1 {
@@ -155,5 +157,10 @@ header {
 }
 #musicToggle {
     width: 150px;
+    position: absolute; /* Absolute positioning within the header */
+    right: 0; /* Align to the right side */
+    top: 50%; /* Position at the vertical center of the header */
+    transform: translateY(-50%);
 }
+
 

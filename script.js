@@ -4,6 +4,7 @@ function allowDrop(event) {
     event.preventDefault();
 }
 
+
 function drag(event) {
     event.dataTransfer.setData("text", event.target.id);
 }

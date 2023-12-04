@@ -74,6 +74,10 @@ h1 {
     color: hotpink;
 }
 
+h2 {
+    font-size: 1.5em;
+    color: hotpink;
+}
 #container {
     display: flex;
     width: 100%;
@@ -111,6 +115,7 @@ h1 {
     text-overflow: ellipsis; /* Adds an ellipsis to text that overflows */
 }
 
+
 #poem-container {
     flex: 0 0 350px;
     border: 2px dashed hotpink;
@@ -123,6 +128,9 @@ h1 {
     margin-right: 20px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    resize: both; /* This allows the container to be resizable both horizontally and vertically */
+    overflow: auto;
+
 }
 
 #poem-container p {
@@ -164,3 +172,22 @@ header {
 }
 
 
+/* Centering the Button */
+#restartButton {
+    display: block; /* Makes the button a block element */
+    margin: 20px auto; /* Centers the button with automatic margins */
+    padding: 10px 20px; /* Adds some padding inside the button */
+    background-color: white; /* Sets the background color to pink */
+    color: hotpink; /* Sets the text color to white */
+    border: dotted; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the mouse cursor to indicate the button is clickable */
+    font-size: 16px; /* Increases the font size */
+    font-weight: bold; /* Makes the font bold */
+    text-transform: uppercase; /* Makes the text uppercase */
+}
+
+/* Adding a hover effect */
+#restartButton:hover {
+    background-color: #e6c3d4; /* Lighter shade of pink on hover */
+}

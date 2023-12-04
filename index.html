@@ -11,7 +11,7 @@
     <nav>
         <ul>
         <li><a class="nav-button-2" href="about.html">About Project</a></li>
-        <li><a class="nav-button-2" href="sample-poems.html">Sample Poems</a></li>
+        <li><a class="nav-button-2" href="sample-poems.html">Submit Your Poem</a></li>
         <li><a class="nav-button-2" href="how-it-works.html">How it Works</a></li>
         </ul>
     </nav>
@@ -278,7 +278,13 @@
 </div>
 </div>
 <div id="poem-container" ondragover="allowDrop(event)" ondrop="drop(event)">
-<p>Drag fragments here to create your poem</p>
+    <button id="restartButton">Click to Restart</button>
+    <p>Drag fragments here to create your poem</p>
+    <script>
+        document.getElementById('restartButton').addEventListener('click', function() {
+            window.location.reload();
+        });
+    </script>
 </div>
 </div>
 <script src="script.js"></script>

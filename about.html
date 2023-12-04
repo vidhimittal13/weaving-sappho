@@ -4,16 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weaving Sappho: Interactive Canvas</title>
+    <style>
+
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            max-width: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content-box {
+            flex: 1;
+            background-color: white;
+            border: 2px solid hotpink;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: hotpink;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .image-container, .content-box {
+                max-width: 100%;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" class = "nav-button-2">Back to Home</a></li>
+                <li><a href="index.html" class="nav-button-2">Back to Home</a></li>
             </ul>
         </nav>
-        <h1>About the Project</h1>
     </header>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="2882.jpg" alt="Image of Sappho">
+            
+            <div class="content-box">
+                <h1>On Sappho</h1>
+            <p>"Sappho was a musician. Her poetry is lyric, that is, composed to be sung to the lyre. She addresses
+                her lyre in one of her poems (fr. 118) and frequently mentions music, songs and singing. Ancient
+                vase painters depict her with her instrument. Later writers ascribe to her three musical inventions:
+                that of the plectron, an instrument for picking the lyre (Suda); that of the pektis, a particular kind
+                of lyre (Athenaios Deipnosophistai 14.635b); and the mixolydian mode, an emotional mode also
+                used by tragic poets, who learned it from Sappho (Aristoxenos cited by Plutarch On Music
+                16.113c). All of Sappho's music is lost."
+            </p>
+            <p>
+                "Sappho was also a poet. There is a fifth-century hydria in the National Museum of Athens that
+                depicts Sappho, identified by name, reading from a papyrus. This is an ideal image; whether or not
+                she herself was literate is unknown. But it seems likely that the words to her songs were written
+                down during or soon after her lifetime and existed on papyrus rolls by the end of the fifth century
+                B.C. On a papyrus roll the text is written in columns, without word division, punctuation or
+                lineation. [...] To read such a text is hard even when it comes to us in its entirety and most papyri
+                don't. Of the nine books of lyrics that Sappho is said to have composed, one poem has survived
+                complete. All the rest are fragments."</p>
+            
+                From "If Not, Winter" by Anne Carson.
+            </div>
+        </div>
+        
+        <div class="content-box">
+        
+            <h1>About the Project</h1>
+            <p>A digital tapestry of poetic exploration inspired by the fragmented works of the ancient Greek poet Sappho. This project, born in the halls of philosophical inquiry under the guidance of Dr. Lynne Huffer at Emory University, aspires to reanimate Sappho's enigmatic verses in a bittersweet symphony of the old and the new.</p>
+            <h2>On Fragments</h2>
+                <p>"Sappho's fragments are of two kinds: those preserved on papyrus and those derived from citation
+                    in ancient authors. When translating texts read from papyri, I have used a single square bracket to
+                    give an impression of missing matter, so that] or [indicates destroyed papyrus or the presence of
+                    letters not quite legible somewhere in the line. It is not the case that every gap or illegibility is
+                    specifically indicated: this would render the page a blizzard of marks and inhibit reading. Brackets
+                    are an aesthetic gesture toward the papyrological event rather than an accurate record of it. I have
+                    not used brackets in translating passages, phrases or words whose existence depends on citation by
+                    ancient authors, since these are intentionally incomplete. I emphasize the distinction between
+                    brackets and no brackets because it will affect your reading experience, if you allow it. Brackets
+                    are exciting. Even though you are approaching Sappho in translation, that is no reason you should
+                    miss the drama of trying to read a papyrus torn in half or riddled with holes or smaller than a postage
+                    stamp—brackets imply a free space of imaginal adventure."</p>
+                    From "If Not, Winter" by Anne Carson.
+            <h2>The Concept</h2>
+            <p>Here, you'll encounter scattered fragments of Sappho's poetry, reminiscent of the tattered papyrus fragments that have carried her words through time. This platform offers two unique pathways to interact with these words:</p>
+            <ol>
+              <li><strong>Recreating the Ancient:</strong> Align the existing fragments on a virtual canvas, akin to the challenge of reading a papyrus torn or riddled with holes, where the creative act becomes an imaginal adventure in weaving Sappho's words into new poems.</li>
+              <li><strong>Adding Your Essence:</strong> Weave your own words among Sappho's, blending past and present in a harmonic poetic expression, channeling the spirit of Sappho who was not just a poet but also a musician, her verses once sung to the lyre.</li>
+            </ol>
+    
+    
+            <h2>Philosophical Roots</h2>
+            <p>Weaving Sappho invites users to engage with the fragments both as a form of reverence and as an act of creation. Is it an act of violence to disrupt the ancient verses? Or is it a thrilling opportunity to birth new poetry? Perhaps it's a melancholic endeavor, mourning the incomplete nature of these works. Weaving Sappho is an exploration of these paradoxical emotions.</p>
+            
+            <p>I welcome you to this journey through time, emotion, and poetry. Unleash your creativity, engage with history, and let the fragments of Sappho inspire you.</p>
+            <!-- Remaining content -->
+        </div>
+    </div>
 </body>
 </html>

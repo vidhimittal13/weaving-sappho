@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weaving Sappho: Interactive Canvas</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+            .content-box {
+            flex: 1;
+            background-color: white;
+            border: 2px solid hotpink;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,7 +31,22 @@
                 <li><a href="index.html" class = "nav-button-2">Back to Home</a></li>
             </ul>
         </nav>
-        <h1>How it Works</h1>
     </header>
+    <h1>How it Works</h1>
+    <div class="main-container">
+    <div class="content-box">
+        <video width="600" controls>
+            <source src="Sample.mov" type="video/quicktime">
+            Your browser does not support HTML video.
+          </video>
+    </div>
+    <div class="content-box">
+        <p>Check out this video to see just how easy it is to use this website. We've got all the fragments sorted into categories like 'Love' and 'Nature' for you to find just what you're looking for. Just click on the category buttons to start exploring.</p>
+
+            <p>Found something you like? Drag it onto the canvas. You can move things around, change them up, put fragments inside other fragments, and add or delete text as you like.</p>
+            
+            <p>If you're in the mood for some tunes while you work, hit the lyre icon in the top right corner to play some music. And when you're done and happy with your poem, just go to the 'Submit' tab to send it in. Have fun! </p>
+    </div>
+</div>
 </body>
 </html>

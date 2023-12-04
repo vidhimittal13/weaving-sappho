@@ -174,20 +174,10 @@ header {
 
 /* Centering the Button */
 #restartButton {
-    display: block; /* Makes the button a block element */
-    margin: 20px auto; /* Centers the button with automatic margins */
-    padding: 10px 20px; /* Adds some padding inside the button */
-    background-color: white; /* Sets the background color to pink */
-    color: hotpink; /* Sets the text color to white */
-    border: dotted; /* Removes the default border */
-    border-radius: 5px; /* Rounds the corners of the button */
+    width: 150px;
     cursor: pointer; /* Changes the mouse cursor to indicate the button is clickable */
-    font-size: 16px; /* Increases the font size */
-    font-weight: bold; /* Makes the font bold */
-    text-transform: uppercase; /* Makes the text uppercase */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-/* Adding a hover effect */
-#restartButton:hover {
-    background-color: #e6c3d4; /* Lighter shade of pink on hover */
-}
